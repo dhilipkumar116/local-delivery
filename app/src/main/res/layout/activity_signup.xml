@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignupActivity"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup!"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="password :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone number :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone number"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vehicle number :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/vehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="vehicle number"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="type of vehicle :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/typeofVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type of vehicle"
+                android:inputType="text"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="full name :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="full name"
+                android:inputType="text"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address :"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:inputType="text"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:visibility="gone">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Ic front side :"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorPrimary"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/pick_icFront"
+                       android:layout_width="100dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/upload"
+                       android:scaleType="fitXY"/>
+                   <ImageView
+                       android:id="@+id/icFrontPicked"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/tick"
+                       android:visibility="invisible"/>
+                   <Button
+                       android:id="@+id/upload_icFront"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:text="upload"
+                       android:background="@drawable/upload_btn"
+                       android:textColor="@android:color/white"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"/>
+
+               </RelativeLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Ic back side :"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorPrimary"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/pick_icBack"
+                       android:layout_width="100dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/upload"
+                       android:scaleType="fitXY"/>
+                   <ImageView
+                       android:id="@+id/icBackPicked"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/tick"
+                       android:visibility="invisible"/>
+                   <Button
+                       android:id="@+id/upload_icBack"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:text="upload"
+                       android:background="@drawable/upload_btn"
+                       android:textColor="@android:color/white"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"/>
+
+               </RelativeLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="license front side :"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorPrimary"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/pick_LiFront"
+                       android:layout_width="100dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/upload"
+                       android:scaleType="fitXY"/>
+                   <ImageView
+                       android:id="@+id/liFrontPicked"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/tick"
+                       android:visibility="invisible"/>
+                   <Button
+                       android:id="@+id/upload_LiFront"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:text="upload"
+                       android:background="@drawable/upload_btn"
+                       android:textColor="@android:color/white"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"/>
+
+               </RelativeLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="license back side :"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorPrimary"/>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/pick_LiBack"
+                       android:layout_width="100dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/upload"
+                       android:scaleType="fitXY"/>
+                   <ImageView
+                       android:id="@+id/liBackPicked"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/tick"
+                       android:visibility="invisible"/>
+                   <Button
+                       android:id="@+id/upload_LiBack"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:text="upload"
+                       android:background="@drawable/upload_btn"
+                       android:textColor="@android:color/white"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"/>
+               </RelativeLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="upload your selfie pic :"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/colorPrimary"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/pick_SelfiePic"
+                       android:layout_width="100dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/upload"
+                       android:scaleType="fitXY"/>
+                   <ImageView
+                       android:id="@+id/selfiePicked"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/tick"
+                       android:visibility="invisible"/>
+                   <Button
+                       android:id="@+id/upload_SelfiePic"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:text="upload"
+                       android:background="@drawable/upload_btn"
+                       android:textColor="@android:color/white"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"/>
+               </RelativeLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"/>
+           </LinearLayout>
+            <TextView
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="register now"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+
+</ScrollView>

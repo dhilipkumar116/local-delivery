@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/nav_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/change_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="change profile"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="user name : "
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="user name  "
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="phno : "
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="15dp"
+                    android:weightSum="10">
+                    <EditText
+                        android:id="@+id/phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="phone number"
+                        android:layout_weight="9"
+                        android:inputType="number"/>
+
+                    <Button
+                        android:id="@+id/savebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="save"
+                        android:background="@drawable/upload_btn"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="password :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="15dp"
+                    android:weightSum="100">
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="password "
+                        android:layout_weight="80"
+                        android:inputType="textPassword"/>
+                    <ImageView
+                        android:id="@+id/hidePassword"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="20"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/hide"/>
+
+                    <Button
+                        android:id="@+id/savepassbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="10"
+                        android:text="save"
+                        android:background="@drawable/upload_btn"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="vehicle number :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/vehiclenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="vehicle number : "
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="vehicle type :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/vehicletype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="vehicle type  "
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="earnings :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total earnings  "
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="wallet :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="wallet balance :  "
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/nav_menu"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

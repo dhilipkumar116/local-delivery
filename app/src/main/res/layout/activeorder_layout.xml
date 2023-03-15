@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="3dp">
+
+    <TextView
+        android:id="@+id/currOrder_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:textColor="@android:color/white"
+        android:background="@drawable/upload_btn"
+        android:padding="3dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="end"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/currOrderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="order id"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/currOrderAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/currOrderDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="distance"/>
+            <TextView
+                android:id="@+id/currOrderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order time"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/currOrder_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/currOrderCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="call"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/currOrderOTW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="on the way"
+                    android:textSize="17sp"
+                    android:layout_marginStart="25dp"/>
+                <TextView
+                    android:id="@+id/currOrderDelivered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="delivered"
+                    android:textSize="17sp"
+                    android:layout_marginStart="25dp"/>
+                <TextView
+                    android:id="@+id/currOrderDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="details"
+                    android:textSize="17sp"
+                    android:layout_marginStart="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dummy_bar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
